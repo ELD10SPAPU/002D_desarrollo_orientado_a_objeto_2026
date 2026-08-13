@@ -1,40 +1,41 @@
 public class Canil {
-
-
     public static void main(String[] args) {
-        Perro perro_de_camilo = new Perro();
-
-        Perro perro_de_alexander = new Perro();
-
-        Perro perro_de_rogelio = new Perro();        
     
-        perro_de_camilo.nombre = "Porky";
-        perro_de_camilo.edad = 5;
-        perro_de_camilo.raza = "Quiltro";
-        perro_de_camilo.peso = 40.5;
-        perro_de_camilo.vacuna = true;
+        System.out.println("***Bienvenido al caníl***");
 
-        perro_de_alexander.nombre = "Sacha";
-        perro_de_alexander.edad = 2;
-        perro_de_alexander.raza = "Pastor Alemán";
-        perro_de_alexander.peso = 35;
-        perro_de_alexander.vacuna = true;
+        Perro perro_del_profe = new Perro();
+        perro_del_profe.nombre = "Gimli";
+        perro_del_profe.edad = 6;
+        perro_del_profe.peso = 40.5;
+        perro_del_profe.tiene_vacuna = false;
 
-        perro_de_rogelio.nombre = "Almendra";
-        perro_de_rogelio.edad = 4;
-        perro_de_rogelio.raza = "Quiltro";
-        perro_de_rogelio.peso = 4;
-        perro_de_rogelio.vacuna = true;
+        Perro perro_de_daniel = new Perro();
+        perro_de_daniel.nombre = "Sultan";
+        perro_de_daniel.edad = 10;
+        perro_de_daniel.peso = 45.0;
+        perro_de_daniel.tiene_vacuna = true;
 
-        System.out.println("Los siguientes animales han ingresado al canil");
+        if (perro_de_daniel.edad > 2){
+            System.out.println(perro_de_daniel.nombre + " tiene más de 2 años su edad es: " + perro_de_daniel.edad);
+        } else {
+            System.out.println(perro_de_daniel.nombre + " es menor a 2 años su edad es: " + perro_de_daniel.edad);
+        }
 
-        System.out.println(perro_de_camilo.nombre);
-        String ladrido = perro_de_camilo.ladrar();
-        System.out.println(ladrido);
+        if (perro_de_daniel.peso > 20) {
+            System.out.println(perro_de_daniel.nombre + " es un perro pesado pesa: " + perro_de_daniel);
+        } else {
+            System.out.println(perro_de_daniel.nombre + " es un perro ligero pesa: " + perro_de_daniel.peso);
+        }
+        if (perro_de_daniel.tiene_vacuna == true){
+            System.out.println("Puede entrar al Canil");
+        } else {
+            System.out.println("Le hacen falta vacunas, no puede entrar al Canil");
+        }
 
-        System.out.println(perro_de_alexander.nombre);
 
-        System.out.println(perro_de_rogelio.nombre);
-
+        //&& y
+        //|| o
+        //! negación
+        System.out.println("Gracias por su visita");
     }
 }
