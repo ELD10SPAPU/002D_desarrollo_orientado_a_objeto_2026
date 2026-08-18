@@ -1,0 +1,9 @@
+personaje
+name
+hp
+mp
+is_ally
+
+attack();
+interact();
+travel();
