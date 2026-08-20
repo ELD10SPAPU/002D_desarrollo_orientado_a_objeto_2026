@@ -25,29 +25,32 @@ public class Main {
                 case "1":
                     System.out.println("CREATING CHARACTER");
 
-
+                    //ASIGNAR NOMBRE
                     System.out.println("INGRESE UN NOMBRE");
                     player_Character.name = scanner.nextLine();
 
-
+                    //ASIGNAR HP
                     System.out.println("INGRESE LOS PUNTOS DE VIDA");
                     player_Character.hit_points = Integer.parseInt(scanner.nextLine());
                     
-
+                    //ASIGNAR PM
                     System.out.println("INGRESE LOS PUNTOS DE MAGIA");
                     player_Character.magic_points = Integer.parseInt(scanner.nextLine());
 
+                    //Asignar edad
+                    System.out.println("INGRESE LA EDAD");
+                    player_Character.validarEdad(Integer.parseInt(scanner.nextLine()));
+                    
 
-                    System.out.println("INGRESE LOS PUNTOS DE MAGIA");
-                    player_Character.magic_points = Integer.parseInt(scanner.nextLine());
                     
                     break;
             
                 case "2":
                     System.out.println("VER PERSONAJE");
-                    System.out.println("NOMBRE: " + player_Character.name);
+                    System.out.println(player_Character.mostrarNombre());
                     System.out.println("HP: " + player_Character.hit_points);
                     System.out.println("MP: " + player_Character.magic_points);
+                    System.out.println(player_Character.mostrarEdad());
 
                     break;
 
