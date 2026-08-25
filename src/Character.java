@@ -5,21 +5,24 @@ public class Character {
     boolean is_ally;
     private int age;
 
-    public void validarEdad(int age){
-        if (age < 0){
+    public void validarEdad(int age) {
+        if (age < 0) {
             System.out.println("Dado que le asignaste una edad negativa, el programa la dejo en 0");
             this.age = 0;
-        } else{
+        } else {
             this.age = age;
         }
+
     }
-    public int mostrarEdad(){
+
+    public int mostrarEdad() {
         return this.age;
     }
-    
-    public String validarNombre(String name){
-        String copia_nombre = name;
+
+    public void validarNombre(String nombre_personaje) {
+        String copia_nombre = nombre_personaje;
         copia_nombre.toLowerCase();
+        copia_nombre.strip();
         switch (copia_nombre) {
             case "weon":
                 this.name = "****";
@@ -40,11 +43,12 @@ public class Character {
                 this.name = "*****";
                 break;
             default:
+                this.name = nombre_personaje;
                 break;
         }
-        this.name = name;
     }
-    public String mostrarNombre(){
+
+    public String mostrarNombre() {
         return this.name;
     }
 }
