@@ -5,6 +5,19 @@ public class Character {
     boolean is_ally;
     private int age;
 
+    public void atacar(){
+        System.out.println("ATACANDO");
+    }
+
+
+
+
+
+
+
+
+
+
     public void validarEdad(int age) {
         if (age < 0) {
             System.out.println("Dado que le asignaste una edad negativa, el programa la dejo en 0");

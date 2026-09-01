@@ -22,6 +22,7 @@ public class Main {
             System.out.println("1.- CREATE CHARACTER");
             System.out.println("2.- VIEW CHARACTER");
             System.out.println("3.- EXIT");
+            System.out.println("4.- TESTEANDO COSITAS");
 
             System.out.println("CHOOSE AN OPTION");
 
@@ -37,12 +38,25 @@ public class Main {
                     System.out.println("GRACIAS POR JUGAR, VUELVA PRONTO");
                     flag_menu = false;
                     break;
+                case  "4":
+                    testeandoCositas();
+                    break;
                 default:
                     System.out.println("OPCIÓN INVALIDA");
                     break;
             }
         }
     }
+
+    static void testeandoCositas(){
+        System.out.println("Cositas del zombie");
+        Zombie zombie = new Zombie();
+        zombie.atacar();
+        zombie.infectarAldeano();
+    }
+
+
+
 
     static void createCharacter(Character player_Character, Scanner scanner) {
 
@@ -71,8 +85,6 @@ public class Main {
         System.out.println("HP: " + player_Character.hit_points);
         System.out.println("MP: " + player_Character.magic_points);
         System.out.println("AGE: " + player_Character.mostrarEdad());
-        System.out.println("TYPE OF CHARACTER: " + player_Character.monstrarTipo());
-
     }
 
     static void createEnderman(Enderman enderman, Scanner scanner) {
