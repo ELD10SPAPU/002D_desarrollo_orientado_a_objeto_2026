@@ -1,1 +1,0 @@
-Implementar un menu en la creación de personaje que me permita elegir el tipo de personaje que quiero crear
