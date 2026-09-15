@@ -20,6 +20,6 @@ public class ProductoDigital extends Producto{
 
     @Override
     public String mostrarInfo() {
-        return super.mostrarInfo() + " descuento de " + this.descuento +"%" + "[PLATAFORMA] " + this.plataforma;
+        return super.mostrarInfo() + "| descuento " + this.descuento +"%" + "| plataforma " + this.plataforma + "| Total $" +  this.calcularPrecioFinal()+ " |";
     }
 }

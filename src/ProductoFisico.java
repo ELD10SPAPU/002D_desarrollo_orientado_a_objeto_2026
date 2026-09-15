@@ -14,6 +14,6 @@ public class ProductoFisico extends Producto{
     }
     @Override
     public String mostrarInfo() {
-        return super.mostrarInfo() + " Costo de envio " + this.costoEnvio;
+        return super.mostrarInfo() + "| precio envio " + this.costoEnvio + "| Total $"+ this.calcularPrecioFinal() +" |";
     }
 }
